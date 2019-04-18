@@ -1,0 +1,16 @@
+---
+title: "Exploratory_Analysis"
+author: "Daniel"
+date: "4/18/2019"
+output: word_document
+---
+Read in the data
+```{r}
+pokemon <- read.csv('Pokemon.csv')
+```
+
+```{r}
+grass_types <- pokemon[,"Type.2"] == 'Grass' | pokemon[,"Type.1"] == 'Grass'
+grass_types
+```
+
